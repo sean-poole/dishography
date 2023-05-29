@@ -8,7 +8,7 @@ Recipe sharing web application.
 
 ## 🍳 How It's Made: 
 
-**Tech Used:** EJS, Bootstrap, CSS, MongoDB, Passport
+**Tech Used:** Node, Express, MongoDB, EJS, Bootstrap, CSS
 
 This site allows users to upload their own recipes, explore a variety of culinary creations, and save their favorites for future reference.
 
