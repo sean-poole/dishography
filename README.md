@@ -1,6 +1,6 @@
 # 📚 Dishography 📚 | <a href="https://dishography.cyclic.app/" target="_blank">Visit Here</a>
 
-Static website displaying all MLB games scheduled for today.
+Recipe sharing web application.
 
 <p align="center">
 <img src="https://github.com/sean-poole/dishography/blob/main/preview/dishography-preview.jpg" width="100%" alt="Dishography">
