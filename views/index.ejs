@@ -1,0 +1,59 @@
+<%- include('partials/header-out') -%>
+
+<main class="container mx-auto mb-3 p-3">
+  <!-- Start Display Card -->
+  <div class="displayCard d-flex row col-12 col-xl-9 justify-content-center p-0 mx-auto">
+    <!-- Start Left Container -->
+    <div class="d-none d-lg-block col-lg-6 p-0">
+      <img src="/imgs/logo/index.jpg" id="indexImg" alt="Vegetables">
+    </div>
+    <!-- End Left Container -->
+
+    <!-- Start Right Container -->
+    <div class="d-flex flex-column justify-content-evenly col-12 col-md-10 col-lg-6">
+      <!-- Welcome Message -->
+      <div class="d-none d-lg-block p-3 mx-auto">
+        <h3>Discover a world of flavors, where food enthusiasts like yourself come together to share their passion for cooking.</h3>
+      </div>
+    
+      <!-- Login Information -->
+      <div class="col-12 p-3 mx-auto">
+        <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+        <div class="alert alert-danger"><%= el.msg %></div>
+        <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+        messages.info.forEach( el => { %>
+        <div class="alert alert-info"><%= el.msg %></div>
+        <% }) %> <% } %>
+        <form action="/login" method="POST">
+          <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label fs-4">Email address: </label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              name="email"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="exampleInputPassword1" class="form-label fs-4">Password: </label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              name="password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary fw-medium fs-5">Login</button>
+          <a href="/signup" class="btn btn-primary fw-medium fs-5"> Sign Up</a>
+        </form>
+      </div>
+    </div>
+    <!-- End Right Container -->
+  </div>
+  <!-- End Display Card-->
+
+</main>
+    
+
+<%- include('partials/footer') -%>

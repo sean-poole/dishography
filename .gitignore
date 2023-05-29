@@ -1,0 +1,4 @@
+config/.env
+node_modules
+public/imgs/profile
+public/imgs/recipe

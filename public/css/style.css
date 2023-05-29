@@ -1,0 +1,159 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+
+body {
+  background-color: #F8F0D2;
+  color: #4A2C1D;
+  letter-spacing: 0.1em;
+  height: 100vh;
+}
+
+/* -- HEADER -- */
+
+.navLogo a {
+  color: #4A2C1D;
+  transition: all 0.3s ease-in-out;
+}
+
+  .navLogo:hover a {
+    color: #4A2C1D;
+    letter-spacing: 0.2em;
+  }
+
+.nav-link {
+  background-color: #F8C1BF;
+  border: 1px solid #F8C1BF;
+  color: #F8F0D2;
+  transition: all 0.2s ease-in-out;
+}
+
+  .nav-link:hover {
+    background-color: #F8F0D2;
+    border: 1px solid #F8F0D2;
+    color: #F8C1BF;
+    cursor: pointer;
+  }
+
+/* -- MAIN -- */
+
+.displayCard {
+  background-color: #C2E0BC;
+  color: #4A2C1D;
+}
+
+.btn {
+  background-color: #68C9D2;
+  border: 2px solid #68C9D2;
+  color: #F8F0D2;
+  transition: all 0.3s ease;
+}
+
+  .btn:hover {
+    background-color: #F8F0D2;
+    color: #68C9D2;
+    border: 2px solid #68C9D2;
+  }
+
+
+/* -- FOOTER -- */
+
+footer {
+  border: 1px solid black;
+  background-color: #4A2C1D;
+  color: #68C9D2;
+}
+
+footer a {
+  color: #68C9D2;
+  text-decoration: none;
+}
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+.footerIcon {
+  border: 3px solid #4A2C1D;
+}
+
+  .footerIcon:hover {
+    border: 3px solid #68C9D2;
+    border-radius: 10%;
+  }
+
+.icon {
+  font-size: 2em;
+  color: #68C9D2;
+}
+
+
+/******************************************
+/* CONTAINERS
+/*******************************************/
+
+.card {
+  background-color: #F8F0D2;
+  border: 2px solid #68C9D2;
+  flex-grow: 1;
+}
+
+textarea {
+  height: 200px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.navbar-toggler {
+  color: #F8C1BF;
+}
+
+#indexImg {
+  width: 100%;
+}
+
+#profileImg {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  border-top: 2px solid #4A2C1D;
+}
+
+.authorName {
+  color: #4A2C1D;
+  text-decoration: none;
+}
+
+  .authorName:hover {
+    text-decoration: underline;
+  }
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    transition: all 0.5s ease-in-out;
+  }
+  
+    .navbar-brand:hover {
+      letter-spacing: 0.1rem;
+    }
+}
