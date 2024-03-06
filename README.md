@@ -6,7 +6,7 @@
 
 ## 🍳 How It's Made: 
 
-**Tech Used:** EJS, Bootstrap, Node, Express, MongoDB
+**Tech Used:** EJS, Node, Express, MongoDB, Bootstrap
 
 This full-stack application enables users to seamlessly share, explore, and save recipes without all the distractions and clutter commonly found on recipe websites.
 
