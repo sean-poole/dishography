@@ -3,7 +3,7 @@
 Recipe sharing web application.
 
 <p align="center">
-<img src="https://github.com/sean-poole/dishography/blob/main/preview/dishography-preview.jpg" width="100%" alt="Dishography">
+<img src="https://github.com/sean-poole/dishography/blob/main/preview/dishography--preview.jpg" width="100%" alt="Dishography">
 </p>
 
 ## 🍳 How It's Made: 
