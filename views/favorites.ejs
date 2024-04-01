@@ -10,11 +10,11 @@
       <% } else { %>
       <ul class="d-flex flex-wrap justify-content-evenly mt-4 list-unstyled">
         <% for (let i = 0; i < favorites.length; i++) { %>
-          <li class="d-flex col-9 col-lg-3 mx-1 my-1">
+          <li class="d-flex col-9 col-md-5 col-xxl-3 mx-1 my-1">
 
             <!-- Start recipe display card -->
             <div class="card mb-3 p-1">
-              <img src="<%=favorites[i].image%>" alt="Food Image" class="img-fluid mx-auto rounded">
+              <img src="<%=favorites[i].image%>" alt="Image of <%=favorites[i].name%>." class="img-fluid mx-auto rounded">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="">
                   <h3 class="fs-5"><%=favorites[i].name%></h3>
@@ -24,9 +24,9 @@
                 <div class="mt-2 fs-6">
                   <div class="">
                     <p class="m-0">Created by: </p>
-                    <a href="/profile/<%=favorites[i].authorId%>" class="authorName m-0 fw-medium"><%=favorites[i].author%></a>
+                    <a href="/profile/<%=favorites[i].authorId%>" class="authorName m-0 fw-medium" aria-label="Navigate to recipe author's profile page."><%=favorites[i].author%></a>
                   </div>
-                  <a href="/feed/<%=favorites[i].recipeId%>" class="btn btn-primary mt-2 fw-medium">View Recipe</a>
+                  <a href="/feed/<%=favorites[i].recipeId%>" class="btn btn-primary mt-2 fw-medium" aria-label="Navigate to the recipe information page for <%=recipes[i].name%>">View Recipe</a>
                 </div>
               </div>
             </div>
