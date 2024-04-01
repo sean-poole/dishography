@@ -76,16 +76,16 @@ footer a {
   }
 
 .footerIcon {
-  border: 3px solid #4A2C1D;
+  border: 2px solid #4A2C1D;
 }
 
   .footerIcon:hover {
-    border: 3px solid #68C9D2;
+    border: 2px solid #68C9D2;
     border-radius: 10%;
   }
 
 .icon {
-  font-size: 2em;
+  font-size: 1.4em;
   color: #68C9D2;
 }
 
