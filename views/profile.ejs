@@ -8,13 +8,13 @@
       <p class="my-1 fw-semibold fs-2"><%=profile.firstName%> <%=profile.lastName%></p>
       <% if (user.id == profile.id) { %>
         <% if (user.image) { %>
-          <a href="/profile/<%=user.id%>/editProfile" class="">
+          <a href="/profile/<%=user.id%>/editProfile" class="" aria-label="Edit profile picture.">
             <img src="<%=profile.image%>" alt="Profile Picture" class="img-fluid my-2" id="profileImg">
           </a>
         <% } else { %>
-          <a href="/profile/<%=user.id%>/editProfile" class="btn btn-primary mx-auto mt-2 px-5 py-2 fw-bolder fs-5 rounded-pill">Add a photo</a>
+          <a href="/profile/<%=user.id%>/editProfile" class="btn btn-primary mx-auto mt-2 px-5 py-2 fw-bolder fs-5 rounded-pill" aria-label="Add a profile picture.">Add a photo</a>
         <% } %>
-        <a href="/profile/<%=user.id%>/addRecipe" class="btn btn-primary mx-auto my-2 px-5 py-2 fw-bolder fs-5 rounded-pill">Add a recipe</a>
+        <a href="/profile/<%=user.id%>/addRecipe" class="btn btn-primary mx-auto my-2 px-5 py-2 fw-bolder fs-5 rounded-pill" aria-label="Add a recipe.">Add a recipe</a>
       <% } else { %>
         <img src="<%=profile.image%>" alt="Profile Picture" class="img-fluid my-2" id="profileImg">
       <% } %>
@@ -33,16 +33,16 @@
               <div class="card-body d-flex flex-column justify-content-between">
                 <h3 class="ms-2 fs-5"><%=recipes[i].name%></h3>
                 <div class="d-flex flex-column">
-                  <a href="/feed/<%=recipes[i]._id%>" class="btn btn-primary mt-2 fw-medium fs-6">View Recipe</a>
+                  <a href="/feed/<%=recipes[i]._id%>" class="btn btn-primary mt-2 fw-medium fs-6" aria-label="View <%=recipes[i].name%> recipe.">View Recipe</a>
 
                   <!-- Display edit/delete buttons to author of recipes -->
                   <% if (recipes[i].user == user.id) { %>
                   <div class="d-flex justify-content-between">
-                    <a href="/profile/<%=user.id%>/editRecipe/<%= recipes[i]._id %>" class="d-flex col-6 pe-1 fs-6">
-                      <button class="btn btn-primary flex-grow-1 mt-2 fw-medium fs-5"><span class="fa fa-pencil"></span></button>
+                    <a href="/profile/<%=user.id%>/editRecipe/<%= recipes[i]._id %>" class="d-flex col-6 pe-1 fs-6" aria-label="Edit <%=recipes[i].name%> recipe.">
+                      <button class="btn btn-primary flex-grow-1 mt-2 fw-medium fs-5" aria-label="Edit <%=recipes[i].name%> recipe."><span class="fa fa-pencil"></span></button>
                     </a>
                     <form action="/profile/<%=user.id%>/deleteRecipe/<%= recipes[i]._id %>?_method=DELETE" method="POST" class="d-flex col-6 ps-1">
-                      <button class="btn btn-primary flex-grow-1 mt-2 fw-medium fs-5"><span class="fa fa-trash"></span></button>
+                      <button class="btn btn-primary flex-grow-1 mt-2 fw-medium fs-5" aria-label="Delete <%=recipes[i].name%> recipe."><span class="fa fa-trash"></span></button>
                     </form>
                   </div>
                   <% } %>
