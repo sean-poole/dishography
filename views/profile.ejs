@@ -9,7 +9,7 @@
       <% if (user.id == profile.id) { %>
         <% if (user.image) { %>
           <a href="/profile/<%=user.id%>/editProfile" class="" aria-label="Edit profile picture.">
-            <img src="<%=profile.image%>" alt="Profile Picture" class="img-fluid my-2" id="profileImg">
+            <img src="<%=profile.image%>" alt="Profile picture" class="img-fluid my-2" id="profileImg">
           </a>
         <% } else { %>
           <a href="/profile/<%=user.id%>/editProfile" class="btn btn-primary mx-auto mt-2 px-5 py-2 fw-bolder fs-5 rounded-pill" aria-label="Add a profile picture.">Add a photo</a>
@@ -29,7 +29,7 @@
 
             <!-- Start recipe display card -->
             <div class="card mb-3 p-1">
-              <img src="<%=recipes[i].image%>" alt="Food Image" class="img-fluid mx-auto rounded">
+              <img src="<%=recipes[i].image%>" alt="Image of <%=recipes[i].name%>" class="img-fluid mx-auto rounded">
               <div class="card-body d-flex flex-column justify-content-between">
                 <h3 class="ms-2 fs-5"><%=recipes[i].name%></h3>
                 <div class="d-flex flex-column">
