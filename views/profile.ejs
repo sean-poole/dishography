@@ -14,7 +14,7 @@
         <% } else { %>
           <a href="/profile/<%=user.id%>/editProfile" class="btn btn-primary mx-auto mt-2 px-5 py-2 fw-bolder fs-5 rounded-pill" aria-label="Add a profile picture.">Add a photo</a>
         <% } %>
-        <a href="/profile/<%=user.id%>/addRecipe" class="btn btn-primary mx-auto my-2 px-5 py-2 fw-bolder fs-5 rounded-pill" aria-label="Add a recipe.">Add a recipe</a>
+        <a href="/profile/<%=user.id%>/addRecipe" class="btn btn-primary mx-auto my-2 px-4 py-2 fw-bolder fs-5 rounded-pill" aria-label="Add a recipe.">Add recipe</a>
       <% } else { %>
         <img src="<%=profile.image%>" alt="Profile Picture" class="img-fluid my-2" id="profileImg">
       <% } %>
@@ -25,7 +25,7 @@
     <div class="col-lg-9 p-0 p-lg-3">
       <ul class="d-flex flex-wrap justify-content-around list-unstyled">
         <% for (let i = 0; i < recipes.length; i++ ) { %>
-          <li class="d-flex col-9 col-lg-3 mx-auto my-1">
+          <li class="d-flex col-9 col-md-5 col-xxl-3 mx-auto my-1">
 
             <!-- Start recipe display card -->
             <div class="card mb-3 p-1">

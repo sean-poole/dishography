@@ -40,6 +40,7 @@ body {
 
 .displayCard {
   background-color: #C2E0BC;
+  border: 2px solid #68C9D2;
   color: #4A2C1D;
 }
 
@@ -118,8 +119,10 @@ textarea {
 
 #profileImg {
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
+  min-height: 200px;
+  min-width: 200px;
 }
 
 hr {
