@@ -5,7 +5,7 @@
 
     <!-- Start recipe description container -->
     <div class="col-md-6 p-3">
-      <img src="<%=recipe.image%>" alt="Recipe Image" class="recipe-img-lg img-fluid col-12 mb-3 rounded">
+      <img src="<%=recipe.image%>" alt="Image of <%=recipe.name%>" class="recipe-img-lg img-fluid col-12 mb-3 rounded">
       <div class="d-flex align-items-start mb-3">
         <div class="">
           <h1><%=recipe.name%></h1>
@@ -17,11 +17,11 @@
           <!-- Recipe not bookmarked: display "+" button -->
           <% if (user.favorites.some(obj => obj.recipeId == recipe._id)) { %>
             <form action="/favorites/<%=recipe._id%>/removeBookmark?_method=PUT" enctype="multipart/form-data" method="POST" class="ms-auto">
-              <button type="submit" class="btn btn-primary fw-bolder rounded"><span class="fa-regular fa-square-minus pt-1 fw-medium fs-4"></span></button>
+              <button type="submit" class="btn btn-primary fw-bolder rounded" aria-label="Add recipe to favorites button."><span class="fa-regular fa-square-minus pt-1 fw-medium fs-4"></span></button>
             </form>
           <% } else { %>
             <form action="/favorites/<%=recipe._id%>/addBookmark?_method=PUT" enctype="multipart/form-data" method="POST" class="ms-auto">
-              <button type="submit" class="btn btn-primary fw-bolder rounded"><span class="fa-regular fa-square-plus pt-1 fw-medium fs-4"></span></button>
+              <button type="submit" class="btn btn-primary fw-bolder rounded" aria-label="Remove recipe from favorites button."><span class="fa-regular fa-square-plus pt-1 fw-medium fs-4"></span></button>
             </form>
           <% } %>
         <% } %>
@@ -30,7 +30,7 @@
       <div class="d-flex flex-column fs-5">
         <h3 class="fw-normal fs-5"><%=recipe.desc%></h3>
         <p class="mt-4 mb-0">Created by: </p>
-        <a href="/profile/<%=recipe.user%>" class="authorName m-0 fw-medium"><%=recipe.author%></a>
+        <a href="/profile/<%=recipe.user%>" class="authorName m-0 fw-medium" aria-label="Navigate to recipe author's profile page."><%=recipe.author%></a>
       </div>
     </div>
     <!-- End recipe description container -->
