@@ -2,14 +2,14 @@
 
 <section class="container mx-auto my-3 p-3">
   <div class="row justify-content-center">
-    <div class="displayCard rounded col-lg-6 p-4">
+    <div class="displayCard rounded col-lg-8 col-xl-6 p-4">
       <form action="/profile/<%=user.id%>/editProfile?_method=PUT" enctype="multipart/form-data" method="POST">
         <div class="mb-3">
           <label for="imgUpload" class="form-label fw-semibold fs-4">Profile picture: </label>
           <input type="file" class="form-control" id="imgUpload" name="image">
           <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-evenly mt-4">
-            <button type="submit" class="btn btn-primary col-10 col-lg-5 my-2 my-lg-0 py-2 fw-bolder fs-5 rounded-pill" value="Upload">Submit</button>
-            <a href="/profile/<%=user.id%>" class="btn btn-primary col-10 col-lg-5 my-2 my-lg-0 py-2 fw-bolder fs-5 rounded-pill">Return to Profile</a>
+            <button type="submit" class="btn btn-primary col-10 col-lg-5 my-2 my-lg-0 py-2 fw-bolder fs-5 rounded-pill" aria-label="Submit button to change the user's profile picture." value="Upload">Submit</button>
+            <a href="/profile/<%=user.id%>" class="btn btn-primary col-10 col-lg-5 my-2 my-lg-0 py-2 fw-bolder fs-5 rounded-pill" aria-label="Navigate back to the user's profile page.">Return to Profile</a>
           </div>
         </div>
       </form>
