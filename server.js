@@ -59,6 +59,12 @@ app.use(passport.session());
 // Use flash messages for errors, info, etc..
 app.use(flash());
 
+// Set cache-control headers for static images served from Cloudinary.
+app.use("/public", (req, res, next) => {
+    res.set("Cache-Control", "public, max-age=31557600");
+    next();
+});
+
 // Setup routes for which the server is listening
 app.use("/", mainRoutes);
 app.use("/profile", profileRoutes);
