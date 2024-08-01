@@ -4,8 +4,8 @@
 
 
 body {
-  background-color: #F8F0D2;
-  color: #4A2C1D;
+  background-color: #436850;
+  color: #12372A;
   letter-spacing: 0.1em;
   height: 100vh;
 }
@@ -13,61 +13,67 @@ body {
 /* -- HEADER -- */
 
 .navLogo a {
-  color: #4A2C1D;
+  color: #F8F0D2;
   transition: all 0.3s ease-in-out;
 }
 
   .navLogo:hover a {
-    color: #4A2C1D;
+    color: #F8F0D2;
     letter-spacing: 0.2em;
   }
 
 .nav-link {
-  background-color: #F8C1BF;
-  border: 1px solid #F8C1BF;
-  color: #F8F0D2;
+  background-color: #12372A;
+  border: 2px solid #12372A;
+  color: #FBFADA;
   transition: all 0.2s ease-in-out;
 }
 
   .nav-link:hover {
-    background-color: #F8F0D2;
-    border: 1px solid #F8F0D2;
-    color: #F8C1BF;
+    background-color: #ADBC9F;
+    border: 2px solid #1A4D2E;
+    color: #12372A;
     cursor: pointer;
   }
 
 /* -- MAIN -- */
 
 .displayCard {
-  background-color: #C2E0BC;
-  border: 2px solid #68C9D2;
-  color: #4A2C1D;
+  background-color: #FBFADA;
+  border: 2px solid #FBFADA;
+  border-radius: 5px;
+  color: #12372A;
+}
+
+.form-control {
+  border: 2px solid #12372A;
 }
 
 .btn {
-  background-color: #68C9D2;
-  border: 2px solid #68C9D2;
+  background-color: #1A4D2E;
+  border: 2px solid #1A4D2E;
   color: #F8F0D2;
+  min-height: 48px;
   transition: all 0.3s ease;
 }
 
   .btn:hover {
-    background-color: #F8F0D2;
-    color: #68C9D2;
-    border: 2px solid #68C9D2;
+    background-color: #ADBC9F;
+    border: 2px solid #1A4D2E;
+    color: #12372A;
   }
 
 
 /* -- FOOTER -- */
 
 footer {
-  border: 1px solid black;
-  background-color: #4A2C1D;
-  color: #68C9D2;
+  border-top: 1px solid black;
+  background-color: #12372A;
+  color: #FBFADA;
 }
 
 footer a {
-  color: #68C9D2;
+  color: #FBFADA;
   text-decoration: none;
 }
 
@@ -76,17 +82,17 @@ footer a {
   }
 
 .footerIcon {
-  border: 2px solid #4A2C1D;
+  border: 2px solid #12372A;
 }
 
   .footerIcon:hover {
-    border: 2px solid #68C9D2;
+    border: 2px solid #FBFADA;
     border-radius: 10%;
   }
 
 .icon {
   font-size: 1.4em;
-  color: #68C9D2;
+  color: #FBFADA;
 }
 
 
@@ -96,7 +102,7 @@ footer a {
 
 .card {
   background-color: #F8F0D2;
-  border: 2px solid #68C9D2;
+  border: 2px solid #436850;
   flex-grow: 1;
 }
 
@@ -132,7 +138,7 @@ hr {
 }
 
 .authorName {
-  color: #4A2C1D;
+  color: #1A4D2E;
   text-decoration: none;
 }
 
